@@ -1,0 +1,413 @@
+* ,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: aliceblue;
+    background-color: #000000;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4 ,p{
+    padding: 5px;
+    margin: 5px;
+}
+
+#bg {
+    width: 100%;
+    height: 95.8%;
+    z-index: -3;
+    position: absolute;
+    top: 0;
+}
+
+.gradient {
+    height: 780px;
+    max-height: 1000px;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#header-img {
+    width: 150px;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav > ul {
+    display: flex;
+}
+nav > ul > a > li {
+    height: 40px;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;  
+    background-color: rgba(214, 0, 0, 0.848);
+    border: transparent; 
+    border-radius: 10px;   
+    overflow: hidden; 
+}
+
+nav > ul > a > li:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#home {
+    text-align: center;
+    padding: 15px; 
+    width: 100%;
+    height: 80%;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    width: 950px;
+}
+
+.container h1 {
+    font-size: 5rem;
+}
+
+.container form {
+    width: 100%;
+    height: 50px;  
+}
+
+.container input[type="submit"] ,.container input[type="email"]  {
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    font-size: 18px;
+}
+
+.container input[type="email"] {
+    width: 60%;
+    text-align: left;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background-color: rgba(214, 0, 0, 0.848);
+    font-weight: 700;
+}
+
+ input[type="submit"]:hover {
+    background-color: red;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.divider-max {
+    margin-top: 0;
+    border-bottom: 6px solid rgba(35, 34, 34, 0.733);
+    width: 100%;
+}
+
+#about-us {
+    display: block;
+        margin: 0 auto;
+        position: relative;
+}
+
+#video {
+    width: 500px;
+    height: 300px;
+}
+
+.left-img {
+    width: 450px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 8%;
+    padding: 20px;
+}
+
+.info-text {
+    width: 40%;
+    font-size: 25px;
+    margin-left: 70px;
+}
+
+#subscription {
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+#subscription h1, #sign-up h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+#subscription ul li{
+    padding: 5px;
+}
+
+#subscription ul li::before{
+    padding: 11px;
+        content: '✓';
+        color: red;
+}
+
+.subs-container {
+    margin: 10px auto;
+    padding: 20px;
+    width: 800px;
+    height: 800px;
+
+}
+
+
+table td{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+
+.cell-1 {
+    text-align: left;
+    background-color: rgb(200, 19, 19);
+}
+
+td:first-child {
+    background-color: #000000;
+}
+
+
+tr:first-of-type {
+    background-color: rgb(142, 3, 3);
+}
+
+tr:first-of-type td:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+tr:first-of-type td:first-child:hover {
+    background-color: #000000;
+    cursor: text;
+}
+
+button {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(142, 3, 3);
+    font-size: 20px;
+    color: #fff;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+td {
+    border-bottom: 3px solid rgba(59, 59, 59, 0.675);
+}
+
+tr:first-of-type td, tr:last-of-type td {
+    border-bottom: none
+}
+
+#sign-up {
+    width: 700px;
+    height: 700px;
+    margin: 20px auto;
+}
+
+#sign-up form {
+    margin: 35px auto ;
+    padding: 10px;
+    height: 80%;
+}
+
+.signin {
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 254, 254, 0.714);
+    text-align: center;
+    color: #454040;
+    display: grid;
+    align-items: center;
+}
+
+.signin input {
+    margin: 10px;
+    width: 70%;
+    height: 50px;
+    padding: 6px;
+    text-align: left;
+}
+
+.signin input[type="submit"] {
+    width: 200px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #7e767651;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+
+@media (max-width: 600px){
+
+    header {
+        flex-flow: column;
+    }
+    .container {
+        display: block;
+        max-width: 90%;
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+        top: 20%;
+    }
+
+    .container h1 {
+        font-size:  1.5rem;
+    }
+
+    .container input[type="email"] {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .container input[type="submit"]:hover {
+        font-size: 20px;
+        background-color: red;
+    }
+
+    .info {
+        display: grid;
+        max-width: 90%;
+        margin: 25px 5px;
+        padding: 15px;
+        justify-items: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .info-text{
+        text-align: center;
+        margin-left: 5px;
+        width: fit-content;
+    }
+
+   #video, .left-img{
+        max-width: 400px;
+   }
+
+   .left-img {
+    margin: 5px;
+    grid-row-start: 2;
+   }
+
+   .subs-container{
+    padding: 5px;
+    font-size: 15px;
+    display: block;
+    max-width: fit-content;
+   }
+
+   button {
+    font-size: 13px;
+    max-width: 60px;
+   }
+}
+
+
+@media (max-width: 1000px) and (min-width: 600px) {
+    header {
+        flex-flow: column;
+    }
+    .container {
+        display: block;
+        max-width: 90%;
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+        top: 20%;
+    }
+
+    .container h1 {
+        font-size:  2.5rem;
+    }
+
+    .info {
+        display: grid;
+        max-width: 90%;
+        margin: 5px 25px;
+        padding: 25px;
+        justify-items: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .info-text{
+        margin-left: 2px;
+        text-align: center;
+        width: fit-content;
+    }
+
+   #video, .left-img{
+        width: 450px;
+   }
+
+   .left-img {
+    margin: 5px;
+    grid-row-start: 2;
+   }
+
+   .subs-container{
+    padding: 5px;
+    display: block;
+    max-width: fit-content;
+   }
+
+   button {
+    font-size: 13px;
+    width: 60px;
+   }
+}
